@@ -3,10 +3,15 @@
 {
   home.username = "claudiu";
   home.homeDirectory = "/home/claudiu";
-
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
-  home.packages = [
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true; 
+
+  home.packages = with pkgs; [
+    brave
+    gemini-cli
+    opencode
   ];
 
   programs.git = {
