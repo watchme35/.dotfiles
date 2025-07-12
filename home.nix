@@ -9,9 +9,9 @@
   nixpkgs.config.allowUnfree = true; 
 
   home.packages = with pkgs; [
-    brave
     gemini-cli
     opencode
+    kitty
   ];
 
   programs.git = {
