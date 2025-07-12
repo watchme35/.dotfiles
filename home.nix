@@ -12,6 +12,11 @@
     gemini-cli
     opencode
     kitty
+    libsForQt5.dolphin
+    wofi
+    waybar
+    font-awesome
+    brave
   ];
 
   programs.git = {
